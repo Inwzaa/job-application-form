@@ -1,0 +1,117 @@
+body {
+  width: 100%;
+  background-color: azure;
+  font-family: arial, sans-serif, verdana;
+  margin: 0; 
+  padding: 50px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  max-width: 500px; 
+  width: 100%;    
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 0 20px gray; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-family: inherit; 
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+input[type="radio"] {
+  width: auto; 
+  margin-right: 8px;
+  transform: scale(1.2); 
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+#resume {
+  display: inline-block;
+  padding: 15px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border: 1px solid blue;
+  background-color: lightblue;
+}
+
+.form-group input:invalid, 
+.form-group select:invalid, 
+.form-group textarea:invalid {
+  outline: none;
+  border: 1px solid red;
+}
+
+.form-group input:valid, 
+.form-group select:valid, 
+.form-group textarea:valid {
+  outline: none;
+  border: 1px solid green;
+}
+
+.form-group input:not(:placeholder-shown):invalid {
+  border: 1px solid red;
+}
+
+.btn {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: yellowgreen;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: #04AA6D;
+  transform: scale(1.2);
+  margin-right: 5px;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: #04AA6D;
+  font-weight: bold;
+  border-color: #04AA6D;
+}

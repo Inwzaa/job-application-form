@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="phone-number">Phone:</label>
+                <input type="tel" id="phone-number" name="phone-number" placeholder="(+1)23-456-789" minlength="9" maxlength="14" required />
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position:</label>
+                <select id="position" name="position" required>
+                    <option value="" disabled selected>Select a position</option>
+                    <option value="web-developer">Web Developer</option>
+                    <option value="data-analyst">Data Analyst</option>
+                    <option value="ui-ux-designer">UI/UX Designer</option>
+                    <option value="cloud-engineer">Cloud Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <fieldset class="radio-group">
+                    <legend>Experience</legend>
+                    <input type="radio" id="exp-junior" name="experience" value="junior" required/>
+                    <label for="exp-junior">Junior</label>
+                    <input type="radio" id="exp-mid-level" name="experience" value="mid-level"/>
+                    <label for="exp-mid-level">Mid-Level</label>
+                    <input type="radio" id="exp-senior" name="experience" value="senior" />
+                    <label for="exp-senior">Senior</label>    
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <fieldset class="radio-group">
+                    <legend>Availability</legend>
+                    <input type="radio" id="availabity-full-time" name="availability" value="full-time" required/>
+                    <label for="availabity-full-time">Full-Time</label>
+                    <input type="radio" id="availabity-part-time" name="availability" value="part-time"/>
+                    <label for="availabity-part-time">Part-Time</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="reasons">Why would you like to join us?</label>
+                <textarea id="reasons" name="reasons" placeholder="Write your motivation..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Your Resume:</label>
+                <input type="file" id="resume" name="resume" accept="application/pdf" required />
+            </div>
+
+            <div>
+                <button type="submit" class="btn">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html> 
